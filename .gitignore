@@ -7,19 +7,40 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Dependency directories
+node_modules/
 
-# Editor directories and files
+# Next.js build output
+.next/
+out/
+dist/
+dist-ssr/
+
+# Static exports (if using `next export`)
+export/
+
+# dotenv environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS system files
+.DS_Store
+
+# Editor settings
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-.env
+
+# misc
+*.local
+
+# Optional: ignore yt-dlp binary (if downloaded in project root)
+yt-dlp
