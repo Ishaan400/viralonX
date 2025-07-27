@@ -79,6 +79,6 @@ Ensure the following environment variables are added in Render/Railway:
 
 ## 📄 License
 
-MIT © [Your Name](https://github.com/Ishaan400)
+MIT © [Ishaan400](https://github.com/Ishaan400)
 
 
