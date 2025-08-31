@@ -32,8 +32,8 @@ A modern, interactive web application that generates viral tweets using AI techn
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd viralsaas
+git clone git@github.com:Ishaan400/viralonX.git
+cd viralonX
 ```
 
 2. Install dependencies:
@@ -69,7 +69,7 @@ npm run dev
 ### Landing Page (`/`)
 - Interactive hero section with animations
 - Feature showcase with auto-rotating highlights
-- Statistics display
+- Backend technology showcase
 - Call-to-action sections
 
 ### Sign Up (`/signup`)
@@ -96,6 +96,7 @@ npm run dev
 - **TweetHistory**: Tweet management and history
 - **LoadingSpinner**: Enhanced loading indicators
 - **AuthForm**: Modern authentication forms
+- **PerformanceMonitor**: Real-time performance metrics
 
 ## 🔧 Customization
 
