@@ -29,8 +29,10 @@ export default function Navbar({ activeTab, setActiveTab }: NavbarProps) {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <Zap className="w-8 h-8 text-purple-400" />
-            <span className="text-xl font-bold text-white">ViralTweets</span>
+            <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-teal-400 rounded-full flex items-center justify-center text-white font-bold text-sm">
+              🦤
+            </div>
+            <span className="text-xl font-bold text-white">viralonX</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -43,7 +45,7 @@ export default function Navbar({ activeTab, setActiveTab }: NavbarProps) {
                   onClick={() => setActiveTab(tab.id)}
                   className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 flex items-center gap-2 ${
                     activeTab === tab.id
-                      ? 'bg-purple-600 text-white'
+                      ? 'bg-blue-600 text-white'
                       : 'text-gray-300 hover:text-white hover:bg-white/10'
                   }`}
                 >
@@ -89,7 +91,7 @@ export default function Navbar({ activeTab, setActiveTab }: NavbarProps) {
                   }}
                   className={`w-full text-left px-3 py-2 rounded-lg font-medium transition-all duration-200 flex items-center gap-2 ${
                     activeTab === tab.id
-                      ? 'bg-purple-600 text-white'
+                      ? 'bg-blue-600 text-white'
                       : 'text-gray-300 hover:text-white hover:bg-white/10'
                   }`}
                 >

@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom CSS variables for the new color scheme */
+:root {
+  --primary-blue: #3b82f6;
+  --primary-teal: #14b8a6;
+  --primary-indigo: #6366f1;
+  --accent-blue: #60a5fa;
+  --accent-teal: #2dd4bf;
+}
+
 /* Global base styles */
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -10,32 +19,128 @@ body {
   color: #f5f5f5;                /* light text for contrast */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Performance optimizations */
+  will-change: scroll-position;
+  contain: layout style paint;
 }
 
-/* You can still use Tailwind’s utility classes—
-   e.g. bg-black, text-white, etc. */
-
-/* Extra utility for balanced text wrapping */
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+/* Enhanced animations with performance optimizations */
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px); 
+    will-change: transform;
+  }
+  50% { 
+    transform: translateY(-10px); 
+    will-change: transform;
   }
 }
 
-/* Custom scrollbar for dark theme */
+@keyframes glow {
+  0%, 100% { 
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3); 
+    will-change: box-shadow;
+  }
+  50% { 
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.6); 
+    will-change: box-shadow;
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Interactive elements with performance optimizations */
+.interactive-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  will-change: transform, box-shadow;
+  contain: layout style;
+}
+
+.interactive-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);
+}
+
+/* Floating animation with performance optimization */
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+  will-change: transform;
+  contain: layout style;
+}
+
+/* Glow effect with performance optimization */
+.glow-effect {
+  animation: glow 2s ease-in-out infinite;
+  will-change: box-shadow;
+  contain: layout style;
+}
+
+/* Shimmer effect for loading states */
+.shimmer {
+  background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.1), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  will-change: background-position;
+}
+
+/* Enhanced focus states */
+.focus-ring:focus {
+  outline: none;
+  ring: 2px;
+  ring-color: var(--primary-blue);
+  ring-offset: 2px;
+  ring-offset-color: #1e293b;
+}
+
+/* Performance-optimized scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.05);  /* very subtle light track */
+  background: rgba(255, 255, 255, 0.05);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2);   /* light thumb for visibility */
+  background: linear-gradient(180deg, var(--primary-blue), var(--primary-teal));
   border-radius: 4px;
+  will-change: background;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.3);   /* brighten on hover */
+  background: linear-gradient(180deg, var(--accent-blue), var(--accent-teal));
+}
+
+/* Text balance utility */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .bg-gradient-blue {
+    background: linear-gradient(135deg, var(--primary-blue), var(--primary-teal));
+  }
+  
+  .text-gradient-blue {
+    background: linear-gradient(135deg, var(--primary-blue), var(--primary-teal));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Performance utilities */
+  .gpu-accelerated {
+    transform: translateZ(0);
+    will-change: transform;
+    contain: layout style paint;
+  }
+  
+  .reduce-motion {
+    animation: none !important;
+    transition: none !important;
+  }
 }

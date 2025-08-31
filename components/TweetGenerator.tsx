@@ -78,8 +78,8 @@ export default function TweetGenerator() {
                 onClick={() => setType(typeOption.id)}
                 className={`p-4 rounded-xl border-2 transition-all duration-200 ${
                   type === typeOption.id
-                    ? 'border-purple-500 bg-purple-500/20 text-white'
-                    : 'border-white/20 bg-white/5 text-gray-300 hover:border-purple-400 hover:bg-purple-400/10'
+                    ? 'border-blue-500 bg-blue-500/20 text-white'
+                    : 'border-white/20 bg-white/5 text-gray-300 hover:border-blue-400 hover:bg-blue-400/10'
                 }`}
               >
                 <Icon className="w-6 h-6 mx-auto mb-2" />
@@ -101,7 +101,7 @@ export default function TweetGenerator() {
             onChange={(e) => setInput(e.target.value)}
             placeholder={selectedType?.placeholder}
             rows={type === 'text' ? 4 : 2}
-            className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 resize-none focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200"
+            className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
           />
           
           {error && (
@@ -113,7 +113,7 @@ export default function TweetGenerator() {
           <button
             onClick={handleGenerate}
             disabled={loading || !input.trim()}
-            className="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-4 px-6 rounded-xl font-semibold hover:from-purple-700 hover:to-pink-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-gray-900 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 transform hover:scale-[1.02] flex items-center justify-center gap-2"
+            className="w-full bg-gradient-to-r from-blue-600 to-teal-600 text-white py-4 px-6 rounded-xl font-semibold hover:from-blue-700 hover:to-teal-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 transform hover:scale-[1.02] flex items-center justify-center gap-2"
           >
             <Sparkles className="w-5 h-5" />
             {loading ? 'Generating Viral Tweets...' : 'Generate Viral Tweets'}

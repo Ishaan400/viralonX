@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { History, Copy, Check, Calendar } from 'lucide-react';
+import LoadingSpinner from './LoadingSpinner';
 
 interface HistoryItem {
   _id: string;
@@ -66,7 +67,7 @@ export default function TweetHistory() {
   if (loading) {
     return (
       <div className="flex items-center justify-center py-12">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-purple-500"></div>
+        <LoadingSpinner size="md" text="Loading history..." />
       </div>
     );
   }
@@ -82,7 +83,7 @@ export default function TweetHistory() {
   return (
     <div className="space-y-6">
       <div className="flex items-center gap-3 mb-6">
-        <History className="w-6 h-6 text-purple-400" />
+        <History className="w-6 h-6 text-blue-400" />
         <h2 className="text-2xl font-bold text-white">Tweet History</h2>
       </div>
 
