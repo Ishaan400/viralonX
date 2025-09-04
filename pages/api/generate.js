@@ -37,7 +37,7 @@ export default async function handler(req, res) {
     const userId = decoded.userId;
 
     // 2. Validate input
-    const { input, type } = req.body;
+    const { input, type, trendMode } = req.body;
     if (!input || !['text', 'article', 'youtube'].includes(type)) {
       return res.status(400).json({ error: 'Invalid input or type' });
     }
@@ -85,29 +85,35 @@ export default async function handler(req, res) {
       summary = summaryResp.generations[0].text.trim();
     }
 
-    // 7. Load trending & viral keywords
-    const trendDoc = await Trend.findOne().sort({ createdAt: -1 });
-    const viralDoc = await Viral.findOne().sort({ createdAt: -1 });
-    const trending = trendDoc?.keywords.join(', ') || '';
-    const viralKeys = viralDoc?.keywords.join(', ') || '';
+    // 7. Load trending & viral keywords with trendMode control
+    const mode = (trendMode || 'both').toLowerCase(); // 'reddit' | 'trends24' | 'both' | 'none'
+    const trendDoc = await Trend.findOne().sort({ createdAt: -1 }); // Trends24
+    const viralDoc = await Viral.findOne().sort({ createdAt: -1 }); // Reddit
 
-    // 8. Build prompt
-    const prompt = `
-You are an API for generating tweets. Do NOT explain or comment.
+    let trendingFromTrends24 = '';
+    let trendingFromReddit = '';
 
-Generate exactly 2 short, engaging tweets based on this topic:
+    if (mode === 'trends24' || mode === 'both') {
+      trendingFromTrends24 = trendDoc?.keywords?.join(', ') || '';
+    }
+    if (mode === 'reddit' || mode === 'both') {
+      trendingFromReddit = viralDoc?.keywords?.join(', ') || '';
+    }
+
+    // 8. Build prompt (strict single tweet, no extra words)
+    const prompt = `Return only the tweet text. No explanations, no quotes, no JSON, no code blocks.
+
+Create one engaging tweet under 280 characters based on:
 "${summary}"
 
-Use trending keywords if they make sense:
-- Twitter trends: ${trending}
-- Google trends: ${viralKeys}
+Trending context (optional, use only if relevant):
+- Trends24: ${trendingFromTrends24}
+- Reddit: ${trendingFromReddit}
 
-Rules:
-- Each tweet must be under 280 characters
-- Be distinct, viral, and hashtag-savvy
-- Do NOT add commentary, titles, code blocks, or explanations
-- Only output a JSON array of 1 tweet strings
-- Do not tell in response "here is your tweet..." or anything like that just simple give one tweet in response.
+Constraints:
+- Output MUST be exactly one tweet line under 280 chars
+- No preface, no trailing notes, no hashtags spam, keep it natural
+- Vary structure for virality (hook, value, CTA, or question)
 `;
 
     // 9. Call Cohere to generate tweets
@@ -120,27 +126,28 @@ Rules:
 
     const rawOutput = tweetResp.generations[0].text.trim();
 
-    let tweets;
-    try {
-      tweets = JSON.parse(rawOutput);
-    } catch {
-      // Cleanup: remove markdown, filter short lines, remove quote wrapping
-      const lines = rawOutput
-        .split('\n')
-        .map(l => l.trim().replace(/^["'\-*\s]+|["'\-*\s]+$/g, ''))
-        .filter(l =>
-          l.length > 30 &&
-          !l.startsWith('```') &&
-          !l.startsWith('[') &&
-          !l.startsWith(']') &&
-          !l.toLowerCase().includes('let me know') &&
-          !l.toLowerCase().includes('here are') &&
-          !l.endsWith(':')
-        );
+    // Normalize to a single clean tweet string
+    let tweet = rawOutput
+      .replace(/^```[a-z]*|```$/g, '')
+      .replace(/^\[|\]$/g, '')
+      .split('\n')
+      .map(l => l.trim())
+      .filter(Boolean)
+      .join(' ')
+      .replace(/^["'\-*\s]+|["'\-*\s]+$/g, '')
+      .trim();
 
-      // Return at most 3 clean tweets
-      tweets = lines.slice(0, 3);
+    // If model still returned multiple lines or sentences acting as list, pick the longest plausible line under 280
+    if (tweet.includes('\n')) {
+      const candidates = tweet.split('\n').map(l => l.trim()).filter(l => l.length > 0 && !l.endsWith(':'));
+      tweet = candidates.sort((a,b)=>b.length-a.length)[0] || tweet;
     }
+
+    if (tweet.length > 280) {
+      tweet = tweet.slice(0, 279);
+    }
+
+    const tweets = [tweet];
 
     // 10. Save history
     await TweetHistory.create({ user: userId, input, tweets });

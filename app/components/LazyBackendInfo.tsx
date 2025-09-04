@@ -19,13 +19,12 @@ export default function LazyBackendInfo() {
             </ul>
           </div>
           <div>
-            <h4 className="text-lg font-semibold text-teal-300 mb-3">AI & External APIs</h4>
+            <h4 className="text-lg font-semibold text-teal-300 mb-3">External Services</h4>
             <ul className="text-sm text-gray-300 space-y-2">
-              <li>• <strong>OpenAI API</strong> for advanced text generation</li>
-              <li>• <strong>Cohere AI</strong> for natural language processing</li>
-              <li>• <strong>Twitter Trends</strong> for real-time topic analysis</li>
-              <li>• <strong>Reddit API</strong> for viral keyword extraction</li>
-              <li>• <strong>YouTube Transcripts</strong> for video content analysis</li>
+              <li>• <strong>Cohere</strong> for text generation</li>
+              <li>• <strong>Trends24</strong> for real-time trending topics</li>
+              <li>• <strong>Reddit</strong> for viral keyword extraction</li>
+              <li>• <strong>yt-dlp</strong> for YouTube captions (auto-sub) parsing</li>
             </ul>
           </div>
         </div>

@@ -10,6 +10,7 @@ export default function TweetGenerator() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
+  const [trendMode, setTrendMode] = useState<'reddit' | 'trends24' | 'both' | 'none'>('both');
 
   const types = [
     { id: 'text', label: 'Topic/Text', icon: Type, placeholder: 'Enter a topic or text to create tweets about...' },
@@ -35,7 +36,7 @@ export default function TweetGenerator() {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${token}`,
         },
-        body: JSON.stringify({ input: input.trim(), type }),
+        body: JSON.stringify({ input: input.trim(), type, trendMode }),
       });
 
       const data = await res.json();
@@ -96,6 +97,28 @@ export default function TweetGenerator() {
           Enter Your {selectedType?.label}
         </label>
         <div className="space-y-4">
+          {/* Trend Source Selector */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+            {[
+              { id: 'both', label: 'Trends + Reddit' },
+              { id: 'trends24', label: 'Trends24 only' },
+              { id: 'reddit', label: 'Reddit only' },
+              { id: 'none', label: 'No trends' },
+            ].map(opt => (
+              <button
+                key={opt.id}
+                onClick={() => setTrendMode(opt.id as any)}
+                className={`px-3 py-2 rounded-lg text-sm border transition-all duration-200 ${
+                  trendMode === opt.id
+                    ? 'border-blue-500 bg-blue-500/20 text-white'
+                    : 'border-white/20 bg-white/5 text-gray-300 hover:border-blue-400 hover:bg-blue-400/10'
+                }`}
+              >
+                {opt.label}
+              </button>
+            ))}
+          </div>
+
           <textarea
             value={input}
             onChange={(e) => setInput(e.target.value)}

@@ -1,0 +1,800 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.120 --> 00:00:01.490
+- Hey, everyone, Alec here with VEED.
+
+00:00:01.490 --> 00:00:02.323
+And in this video,
+
+00:00:02.323 --> 00:00:03.156
+I'm going to be showing you
+
+00:00:03.156 --> 00:00:05.530
+how to add subtitles to a YouTube video.
+
+00:00:05.530 --> 00:00:07.450
+So YouTube has recently updated
+
+00:00:07.450 --> 00:00:08.570
+their upload process.
+
+00:00:08.570 --> 00:00:10.190
+And now during the upload process,
+
+00:00:10.190 --> 00:00:11.530
+you can add subtitles
+
+00:00:11.530 --> 00:00:13.060
+while you're uploading your video.
+
+00:00:13.060 --> 00:00:14.340
+Now, in this video, I'm going to walk you
+
+00:00:14.340 --> 00:00:15.490
+through that step by step.
+
+00:00:15.490 --> 00:00:16.790
+And we'll be adding our subtitles
+
+00:00:16.790 --> 00:00:18.280
+to the YouTube video manually,
+
+00:00:18.280 --> 00:00:19.460
+but after I've shown you this,
+
+00:00:19.460 --> 00:00:20.293
+I'm gonna be showing you
+
+00:00:20.293 --> 00:00:23.070
+how to automatically
+generate a subtitle SRT file
+
+00:00:23.070 --> 00:00:24.750
+so you can upload your subtitles
+
+00:00:24.750 --> 00:00:26.810
+with your YouTube video at the same time,
+
+00:00:26.810 --> 00:00:28.090
+in just a few clicks.
+
+00:00:28.090 --> 00:00:29.040
+And with that being said,
+
+00:00:29.040 --> 00:00:29.930
+let's get started.
+
+00:00:29.930 --> 00:00:31.110
+So once we're on YouTube,
+
+00:00:31.110 --> 00:00:32.500
+to add subtitles to our video
+
+00:00:32.500 --> 00:00:33.380
+while we upload it,
+
+00:00:33.380 --> 00:00:34.610
+we're just going to upload a video
+
+00:00:34.610 --> 00:00:35.750
+as we would normally.
+
+00:00:35.750 --> 00:00:36.790
+So here I'm just gonna click
+
+00:00:36.790 --> 00:00:38.270
+on the create button right here.
+
+00:00:38.270 --> 00:00:40.450
+And then we're just gonna
+select Upload video.
+
+00:00:40.450 --> 00:00:42.620
+Now we're taken to the
+YouTube video upload page
+
+00:00:42.620 --> 00:00:44.080
+and this is where I'm going to select
+
+00:00:44.080 --> 00:00:44.913
+the YouTube video
+
+00:00:44.913 --> 00:00:46.400
+I want to upload to YouTube.
+
+00:00:46.400 --> 00:00:48.030
+So I click on Select Files
+
+00:00:48.030 --> 00:00:48.863
+and then here
+
+00:00:48.863 --> 00:00:50.200
+I'm just going to select
+my YouTube videos.
+
+00:00:50.200 --> 00:00:52.180
+As you see, I've got it here ready.
+
+00:00:52.180 --> 00:00:53.080
+I click Open
+
+00:00:53.080 --> 00:00:55.830
+and now it's being uploaded to YouTube.
+
+00:00:55.830 --> 00:00:56.663
+So as you can see
+
+00:00:56.663 --> 00:00:57.780
+our video is now being uploaded
+
+00:00:57.780 --> 00:00:58.740
+and here we can fill out
+
+00:00:58.740 --> 00:01:00.110
+all the information for our video
+
+00:01:00.110 --> 00:01:01.070
+as if we would normally.
+
+00:01:01.070 --> 00:01:03.130
+So when you upload a
+video normally to YouTube,
+
+00:01:03.130 --> 00:01:05.030
+you go ahead, you fill out the title,
+
+00:01:05.030 --> 00:01:06.340
+you fill out the description.
+
+00:01:06.340 --> 00:01:07.510
+You might add a thumbnail,
+
+00:01:07.510 --> 00:01:09.180
+you might add some tags at the bottom.
+
+00:01:09.180 --> 00:01:10.500
+Then once we click Next
+
+00:01:10.500 --> 00:01:11.410
+to go to the next step
+
+00:01:11.410 --> 00:01:12.560
+for the video elements,
+
+00:01:12.560 --> 00:01:14.450
+here you'll notice that at the top,
+
+00:01:14.450 --> 00:01:15.580
+we have this new section,
+
+00:01:15.580 --> 00:01:17.840
+which is Add subtitles right next to it.
+
+00:01:17.840 --> 00:01:19.010
+As you can see, New.
+
+00:01:19.010 --> 00:01:20.300
+Now, there's always been the possibility
+
+00:01:20.300 --> 00:01:22.310
+to add subtitles to a YouTube video,
+
+00:01:22.310 --> 00:01:24.610
+but here YouTube implemented this section
+
+00:01:24.610 --> 00:01:26.660
+directly within the upload process
+
+00:01:26.660 --> 00:01:28.810
+because they know how
+important subtitles are
+
+00:01:28.810 --> 00:01:30.400
+and how important they're becoming
+
+00:01:30.400 --> 00:01:32.760
+because video content
+is dominating online.
+
+00:01:32.760 --> 00:01:34.050
+And it even says just below,
+
+00:01:34.050 --> 00:01:35.230
+Reach a broader audience
+
+00:01:35.230 --> 00:01:37.200
+by adding subtitles to your video.
+
+00:01:37.200 --> 00:01:38.350
+So even YouTube knows
+
+00:01:38.350 --> 00:01:40.270
+that if you add subtitles to video,
+
+00:01:40.270 --> 00:01:41.810
+you're going to get more reach
+
+00:01:41.810 --> 00:01:42.840
+and more views.
+
+00:01:42.840 --> 00:01:44.000
+Now to add the subtitles,
+
+00:01:44.000 --> 00:01:45.940
+all we're going to do is click on Add
+
+00:01:45.940 --> 00:01:47.580
+right next to add subtitles.
+
+00:01:47.580 --> 00:01:49.240
+And now you might recognize this.
+
+00:01:49.240 --> 00:01:51.970
+This is the YouTube subtitle editor.
+
+00:01:51.970 --> 00:01:53.220
+Now here, as you can see,
+
+00:01:53.220 --> 00:01:54.230
+we've got three options.
+
+00:01:54.230 --> 00:01:55.170
+We can upload a file
+
+00:01:55.170 --> 00:01:56.170
+that we've already created.
+
+00:01:56.170 --> 00:01:57.840
+So this could be an SRT file.
+
+00:01:57.840 --> 00:01:59.040
+However, we don't have one,
+
+00:01:59.040 --> 00:02:00.160
+but stick around I'm going to show you
+
+00:02:00.160 --> 00:02:01.160
+how to generate one of these
+
+00:02:01.160 --> 00:02:02.650
+automatically for your video.
+
+00:02:02.650 --> 00:02:03.800
+Then we can Auto-sync.
+
+00:02:03.800 --> 00:02:04.670
+And this is basically,
+
+00:02:04.670 --> 00:02:06.730
+if you have a full transcript
+
+00:02:06.730 --> 00:02:08.660
+of your video script,
+
+00:02:08.660 --> 00:02:10.240
+you can basically just copy and paste it
+
+00:02:10.240 --> 00:02:11.900
+and then YouTube will auto sync it up
+
+00:02:11.900 --> 00:02:14.030
+to match the words when you say them.
+
+00:02:14.030 --> 00:02:15.940
+And then obviously
+we've got Type manually.
+
+00:02:15.940 --> 00:02:18.320
+And this is where you can
+add subtitles in manually
+
+00:02:18.320 --> 00:02:19.890
+by clicking in the time
+
+00:02:19.890 --> 00:02:22.120
+and then typing out what I say.
+
+00:02:22.120 --> 00:02:22.953
+So for an example,
+
+00:02:22.953 --> 00:02:24.520
+if I just want to add a subtitle here,
+
+00:02:24.520 --> 00:02:25.840
+I click on Type manually.
+
+00:02:25.840 --> 00:02:26.910
+And then at the beginning,
+
+00:02:26.910 --> 00:02:28.387
+let's listen to what I say.
+
+00:02:28.387 --> 00:02:30.490
+"So I've got this video."
+
+00:02:30.490 --> 00:02:31.907
+So my very first subtitle would be,
+
+00:02:31.907 --> 00:02:32.960
+"So I've got this video."
+
+00:02:32.960 --> 00:02:37.960
+So I've got this video.
+
+00:02:38.190 --> 00:02:39.820
+Perfect. Now, as you can see
+
+00:02:39.820 --> 00:02:42.260
+for the timestamps for this subtitle,
+
+00:02:42.260 --> 00:02:45.680
+we go from zero seconds to 1.29 seconds.
+
+00:02:45.680 --> 00:02:46.620
+So if I play it back
+
+00:02:46.620 --> 00:02:47.520
+and we pay attention here,
+
+00:02:47.520 --> 00:02:49.887
+we can actually see the
+subtitle in the box.
+
+00:02:49.887 --> 00:02:50.797
+"So I've got this video
+
+00:02:50.797 --> 00:02:53.140
+and I want to add subtitles to it."
+
+00:02:53.140 --> 00:02:53.973
+So as you can see,
+
+00:02:53.973 --> 00:02:55.590
+our subtitle is dragging a little bit,
+
+00:02:55.590 --> 00:02:56.423
+because it disappears
+
+00:02:56.423 --> 00:02:57.530
+after we've finished saying it.
+
+00:02:57.530 --> 00:02:58.620
+So here we can either go
+
+00:02:58.620 --> 00:03:01.040
+and adjust timestamp right here,
+
+00:03:01.040 --> 00:03:03.020
+or we can go and just click and drag it
+
+00:03:03.020 --> 00:03:04.830
+directly within the timeline.
+
+00:03:04.830 --> 00:03:06.320
+And then I can click on Add caption
+
+00:03:06.320 --> 00:03:07.590
+to add the next one.
+
+00:03:07.590 --> 00:03:09.207
+So let's see what I say next.
+
+00:03:09.207 --> 00:03:11.007
+"And I want to add subtitles to it."
+
+00:03:12.730 --> 00:03:13.727
+Okay. Here I say,
+
+00:03:13.727 --> 00:03:18.727
+"And I want to add subtitles to it."
+
+00:03:19.320 --> 00:03:21.290
+So now I've got my first two subtitles.
+
+00:03:21.290 --> 00:03:22.410
+And that's how you add subtitles
+
+00:03:22.410 --> 00:03:23.350
+to your YouTube video.
+
+00:03:23.350 --> 00:03:24.183
+You can understand
+
+00:03:24.183 --> 00:03:25.560
+that it can be very time consuming.
+
+00:03:25.560 --> 00:03:27.640
+Once you've finished adding
+all of your subtitles,
+
+00:03:27.640 --> 00:03:28.473
+all you want to do
+
+00:03:28.473 --> 00:03:29.910
+is make sure you click Done
+
+00:03:29.910 --> 00:03:31.420
+in the top right
+
+00:03:31.420 --> 00:03:33.570
+and then YouTube will save your subtitles.
+
+00:03:33.570 --> 00:03:34.760
+However, as you notice
+
+00:03:34.760 --> 00:03:35.790
+this takes a lot of time,
+
+00:03:35.790 --> 00:03:37.310
+so here's how to automatically generate
+
+00:03:37.310 --> 00:03:39.240
+a subtitle file for your video.
+
+00:03:39.240 --> 00:03:40.400
+So we're going to head over
+
+00:03:40.400 --> 00:03:42.360
+to a website called veed.io.
+
+00:03:42.360 --> 00:03:43.470
+You can either head over to Google
+
+00:03:43.470 --> 00:03:45.370
+and google VEED, which is V-E-E-D.
+
+00:03:45.370 --> 00:03:46.800
+If not, as usual link is gonna be
+
+00:03:46.800 --> 00:03:48.450
+in the description down below.
+
+00:03:48.450 --> 00:03:49.283
+Once you're on VEED,
+
+00:03:49.283 --> 00:03:50.230
+if you don't already have an account,
+
+00:03:50.230 --> 00:03:51.750
+you can create an account for free.
+
+00:03:51.750 --> 00:03:53.220
+And if you do, we're just gonna click
+
+00:03:53.220 --> 00:03:54.980
+on the Create New Project button.
+
+00:03:54.980 --> 00:03:57.210
+Here we're taken to the upload screen
+
+00:03:57.210 --> 00:03:59.010
+and we're just gonna
+click on Upload a File.
+
+00:03:59.010 --> 00:04:01.140
+Select our YouTube video, click Open.
+
+00:04:01.140 --> 00:04:01.973
+And as you can see,
+
+00:04:01.973 --> 00:04:03.130
+our YouTube video is now imported
+
+00:04:03.130 --> 00:04:05.030
+into VEED's Video Editor.
+
+00:04:05.030 --> 00:04:06.907
+So now if we take a look and press play.
+
+00:04:06.907 --> 00:04:08.230
+"So I've got this video."
+
+00:04:08.230 --> 00:04:10.200
+We have the exact same video.
+
+00:04:10.200 --> 00:04:12.910
+And basically to automatically
+generate subtitles
+
+00:04:12.910 --> 00:04:14.370
+for my YouTube video,
+
+00:04:14.370 --> 00:04:16.540
+all I have to do is
+click on the Subtitle tab
+
+00:04:16.540 --> 00:04:17.680
+in the left toolbar.
+
+00:04:17.680 --> 00:04:19.340
+And here again, we've got three options
+
+00:04:19.340 --> 00:04:21.060
+and this time one of the options
+
+00:04:21.060 --> 00:04:22.520
+is Auto-Transcribe.
+
+00:04:22.520 --> 00:04:23.410
+And as you can see here,
+
+00:04:23.410 --> 00:04:25.190
+it says automatically add subtitles
+
+00:04:25.190 --> 00:04:26.210
+to your video.
+
+00:04:26.210 --> 00:04:27.580
+So if I click on this,
+
+00:04:27.580 --> 00:04:29.040
+I then select the language
+
+00:04:29.040 --> 00:04:31.340
+that I want to automatically transcribe
+
+00:04:31.340 --> 00:04:33.130
+and turn into subtitles.
+
+00:04:33.130 --> 00:04:35.160
+Here as you can see, I've got English.
+
+00:04:35.160 --> 00:04:36.860
+And I'm just gonna stay with English.
+
+00:04:36.860 --> 00:04:38.490
+Then I click on Start.
+
+00:04:38.490 --> 00:04:39.323
+And as you can see,
+
+00:04:39.323 --> 00:04:41.060
+this process may take a few seconds
+
+00:04:41.060 --> 00:04:41.893
+to a few minutes,
+
+00:04:41.893 --> 00:04:43.540
+depending on the length of your video
+
+00:04:43.540 --> 00:04:46.470
+to automatically transcribe
+your videos audio into text
+
+00:04:46.470 --> 00:04:48.913
+and turn that text into subtitles.
+
+00:04:49.920 --> 00:04:50.753
+So as you can see
+
+00:04:50.753 --> 00:04:52.140
+VEED has just finished generating
+
+00:04:52.140 --> 00:04:53.720
+the subtitles for our video.
+
+00:04:53.720 --> 00:04:55.370
+And now the first thing you notice is
+
+00:04:55.370 --> 00:04:56.337
+that our sentence.
+
+00:04:56.337 --> 00:04:57.380
+"So I've got this video
+
+00:04:57.380 --> 00:04:59.640
+and I want to add subtitles to it."
+
+00:04:59.640 --> 00:05:00.740
+This is the exact video
+
+00:05:00.740 --> 00:05:01.990
+that we typed out manually
+
+00:05:01.990 --> 00:05:04.390
+within YouTube's studio.
+
+00:05:04.390 --> 00:05:06.307
+So now if I press play and we take a look.
+
+00:05:06.307 --> 00:05:07.530
+"So I've got this video
+
+00:05:07.530 --> 00:05:09.310
+and I want to add subtitles to it.
+
+00:05:09.310 --> 00:05:10.420
+Hey, everyone, my name is Alec.
+
+00:05:10.420 --> 00:05:11.620
+And in this video, I'm
+gonna be showing you
+
+00:05:11.620 --> 00:05:13.810
+how to add subtitles to any video online.
+
+00:05:13.810 --> 00:05:15.570
+And to get started."
+
+00:05:15.570 --> 00:05:16.420
+So, as you can see,
+
+00:05:16.420 --> 00:05:18.540
+we've automatically
+generated the subtitles
+
+00:05:18.540 --> 00:05:20.230
+for our video.
+
+00:05:20.230 --> 00:05:21.700
+Now, if you want to change
+
+00:05:21.700 --> 00:05:23.600
+and adjust a few things, for example,
+
+00:05:23.600 --> 00:05:25.970
+in this automatically
+generated transcript,
+
+00:05:25.970 --> 00:05:27.440
+as you can see here, it says, Alex,
+
+00:05:27.440 --> 00:05:28.273
+instead of Alec,
+
+00:05:28.273 --> 00:05:29.790
+so I'm just gonna quickly correct that,
+
+00:05:29.790 --> 00:05:31.450
+but this is a very common mistake,
+
+00:05:31.450 --> 00:05:32.430
+even on the iPhone,
+
+00:05:32.430 --> 00:05:34.860
+my name is always auto corrected to Alex,
+
+00:05:34.860 --> 00:05:35.730
+but I always recommend
+
+00:05:35.730 --> 00:05:36.630
+just quickly going through
+
+00:05:36.630 --> 00:05:37.900
+and checking your subtitles.
+
+00:05:37.900 --> 00:05:39.790
+But just from the first sentence,
+
+00:05:39.790 --> 00:05:41.950
+we can see that it's
+already pretty accurate.
+
+00:05:41.950 --> 00:05:43.850
+And then to download it as an SRT file
+
+00:05:43.850 --> 00:05:45.300
+so we can upload it to YouTube,
+
+00:05:45.300 --> 00:05:46.133
+all we're going to do
+
+00:05:46.133 --> 00:05:48.060
+is click on the Options tab right here.
+
+00:05:48.060 --> 00:05:50.610
+And then here we have the
+Download Subtitles section.
+
+00:05:50.610 --> 00:05:51.740
+And we have multiple formats
+
+00:05:51.740 --> 00:05:54.300
+which we can download our subtitles as.
+
+00:05:54.300 --> 00:05:56.470
+And we're just going to select SRT Format
+
+00:05:56.470 --> 00:05:58.790
+which is the subtitle format,
+
+00:05:58.790 --> 00:06:00.050
+click on Download.
+
+00:06:00.050 --> 00:06:01.020
+And as you can see here,
+
+00:06:01.020 --> 00:06:02.800
+we now have our SRT file.
+
+00:06:02.800 --> 00:06:05.400
+So I'm going to head over back to YouTube
+
+00:06:05.400 --> 00:06:06.890
+and this time I'm just going to delete
+
+00:06:06.890 --> 00:06:08.920
+the subtitles that I manually typed in.
+
+00:06:08.920 --> 00:06:10.920
+And if we click on Add again,
+
+00:06:10.920 --> 00:06:13.620
+here we're going to
+click on Upload a file.
+
+00:06:13.620 --> 00:06:15.030
+I'm going to choose With timing
+
+00:06:15.030 --> 00:06:17.400
+because our subtitle file has timing.
+
+00:06:17.400 --> 00:06:18.620
+I click Continue.
+
+00:06:18.620 --> 00:06:20.070
+And then I'm just going to select
+
+00:06:20.070 --> 00:06:21.010
+the SRT file
+
+00:06:21.010 --> 00:06:23.780
+that we've just automatically
+generated using VEED.
+
+00:06:23.780 --> 00:06:26.070
+Click Open and now as you can see,
+
+00:06:26.070 --> 00:06:27.320
+all of the subtitles
+
+00:06:27.320 --> 00:06:29.200
+with the corrections that I made
+
+00:06:29.200 --> 00:06:32.300
+have been imported into YouTube.
+
+00:06:32.300 --> 00:06:33.920
+Now I can just click Done.
+
+00:06:33.920 --> 00:06:35.730
+And that is how to upload subtitles
+
+00:06:35.730 --> 00:06:37.020
+to a YouTube video
+
+00:06:37.020 --> 00:06:39.840
+after YouTube's new upload process update.
+
+00:06:39.840 --> 00:06:40.673
+If you have any questions
+
+00:06:40.673 --> 00:06:42.440
+about adding subtitles to a YouTube video,
+
+00:06:42.440 --> 00:06:43.273
+I would love to hear them
+
+00:06:43.273 --> 00:06:44.640
+in the comment section down below.
+
+00:06:44.640 --> 00:06:45.473
+And if you enjoyed this video
+
+00:06:45.473 --> 00:06:46.560
+and you found it helpful
+
+00:06:46.560 --> 00:06:48.130
+as always please hit the like button,
+
+00:06:48.130 --> 00:06:49.200
+the subscribe button
+
+00:06:49.200 --> 00:06:50.265
+and the notification bell.
+
+00:06:50.265 --> 00:06:51.353
+Thanks for watching.
+

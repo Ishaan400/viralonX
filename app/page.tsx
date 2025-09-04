@@ -34,14 +34,14 @@ export default function HomePage() {
     {
       icon: TrendingUp,
       title: 'Trending Topics',
-      description: 'Leverages real-time trending topics from Twitter to ensure your content stays relevant.',
+      description: 'Leverages real-time trending topics (Trends24) to ensure your content stays relevant.',
       color: 'from-blue-500 to-cyan-500',
       bgColor: 'bg-gradient-to-br from-blue-500/20 to-cyan-500/20'
     },
     {
       icon: Sparkles,
-      title: 'AI-Powered Generation',
-      description: 'Uses advanced AI to create engaging, viral-worthy tweets tailored to your content.',
+      title: 'Smart Tweet Creation',
+      description: 'Create engaging tweets from any YouTube video, article, or topic with a click.',
       color: 'from-teal-500 to-emerald-500',
       bgColor: 'bg-gradient-to-br from-teal-500/20 to-emerald-500/20'
     },
@@ -98,7 +98,7 @@ export default function HomePage() {
           <div className={`text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500/20 to-teal-500/20 border border-blue-500/30 rounded-full px-4 py-2 mb-6 backdrop-blur-sm">
               <Star className="w-4 h-4 text-blue-400" />
-              <span className="text-blue-300 text-sm font-medium">AI-Powered Content Generation</span>
+              <span className="text-blue-300 text-sm font-medium">Trending-topic boosted tweets</span>
             </div>
             
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl mb-6 leading-tight">
@@ -107,7 +107,7 @@ export default function HomePage() {
             </h1>
             
             <p className="text-lg leading-8 text-gray-300 mb-10 max-w-2xl mx-auto">
-              Transform your content into engaging, viral-worthy tweets using trending topics from Twitter and viral keywords from across the internet. Powered by viralonX and advanced AI technology.
+              Use trending topics to increase the chance of reach. viralonX makes it easy to craft tweets from any YouTube video, web page, or topic—fast.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-16">

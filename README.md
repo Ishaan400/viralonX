@@ -1,12 +1,12 @@
-# viralonX - AI-Powered Tweet Generator
+# viralonX - Tweet Generator
 
-A modern, interactive web application that generates viral tweets using AI technology. The platform leverages real-time trending topics from Twitter and viral keywords from across the internet to create engaging, viral-worthy content. Built with the power of viralonX.
+A modern, interactive web application that helps you create engaging tweets. The platform leverages real-time trending topics (Trends24) and viral keywords from Reddit to craft content that can reach more people.
 
 ## ✨ Features
 
-- **AI-Powered Generation**: Advanced AI creates engaging, viral-worthy tweets
-- **Trending Topics**: Real-time trending topics from Twitter for relevance
-- **Viral Keywords**: Integration with Reddit and Google Trends for maximum engagement
+- **Smart Generation**: Create engaging, viral-ready tweets from your inputs
+- **Trending Topics**: Real-time trending topics from Trends24 for relevance
+- **Viral Keywords**: Integration with Reddit for maximum engagement
 - **Interactive UI**: Modern, responsive design with smooth animations
 - **Real-time Processing**: Instant tweet generation with loading states
 - **History Tracking**: Save and manage all generated tweets
@@ -61,7 +61,7 @@ npm run dev
 - **Icons**: Lucide React
 - **Backend**: Node.js API routes
 - **Database**: MongoDB with Mongoose
-- **AI**: OpenAI API, Cohere AI
+- **Content Generation**: Cohere API
 - **Authentication**: JWT tokens
 
 ## 📱 Pages
@@ -133,8 +133,8 @@ npm start
 Ensure these are set in production:
 - `MONGODB_URI` - MongoDB connection string
 - `JWT_SECRET` - JWT signing secret
-- `OPENAI_API_KEY` - OpenAI API key
-- `COHERE_API_KEY` - Cohere AI API key
+- `COHERE_API_KEY` - Cohere API key
+- `YT_DLP_PATH` - Absolute path to yt-dlp binary (optional if in PATH)
 
 ## 🤝 Contributing
 
@@ -163,12 +163,11 @@ For support, questions about the backend implementation, or collaboration opport
 - **Authentication**: JWT-based session management with bcrypt password hashing
 - **API Design**: RESTful endpoints with proper HTTP status codes and error handling
 
-### **External API Integrations**
-- **OpenAI API**: Advanced text generation and content creation
-- **Cohere AI**: Natural language processing and text analysis
-- **Twitter Trends**: Real-time trending topic extraction
-- **Reddit API**: Viral keyword and buzzword analysis
-- **YouTube Transcripts**: Video content analysis for tweet generation
+### **External Integrations**
+- **Cohere**: Text generation
+- **Trends24**: Real-time trending topic extraction
+- **Reddit**: Viral keywords and buzzword analysis
+- **yt-dlp**: YouTube captions (auto-sub) extraction for content parsing
 
 ### **Security Features**
 - **Password Hashing**: bcrypt with salt rounds for secure storage

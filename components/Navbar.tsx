@@ -28,12 +28,17 @@ export default function Navbar({ activeTab, setActiveTab }: NavbarProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center gap-2">
+          <button
+            type="button"
+            onClick={() => router.push('/')}
+            className="flex items-center gap-2 hover:opacity-90 transition-opacity"
+            aria-label="Go to homepage"
+          >
             <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-teal-400 rounded-full flex items-center justify-center text-white font-bold text-sm">
               🦤
             </div>
             <span className="text-xl font-bold text-white">viralonX</span>
-          </div>
+          </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-4">

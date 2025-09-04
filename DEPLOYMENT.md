@@ -58,8 +58,9 @@ Create `.env.local` with:
 ```env
 MONGODB_URI=your_mongodb_connection
 JWT_SECRET=your_jwt_secret
-OPENAI_API_KEY=your_openai_key
 COHERE_API_KEY=your_cohere_key
+# Optional: path to yt-dlp binary if not in PATH
+YT_DLP_PATH=/usr/local/bin/yt-dlp
 ```
 
 ## 🎨 **Customization Guide**
